@@ -107,7 +107,7 @@ const Scene2: React.FC = () => (
   <SceneFade bg={colors.forest}>
     <AbsoluteFill style={column}>
       <Rise delay={4} style={{color: colors.orange, fontSize: 56, fontWeight: 800, letterSpacing: 4}}>
-        NA CERTRACC
+        No CERTRACC
       </Rise>
       {services.map((s, i) => (
         <Rise
