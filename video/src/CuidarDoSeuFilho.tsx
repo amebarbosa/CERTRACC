@@ -96,7 +96,13 @@ const Scene1: React.FC = () => (
 );
 
 // Cena 2 — especialidades
-const services = ['Ortopedia', 'Reconstrução óssea', 'Alongamento'];
+const services = [
+  'Ortopedia Pediátrica',
+  'Alongamento Ósseo',
+  'Pediatria',
+  'Nefrologia Pediátrica',
+  'Reabilitação Infantil Pós-operatória',
+];
 const Scene2: React.FC = () => (
   <SceneFade bg={colors.forest}>
     <AbsoluteFill style={column}>
@@ -106,14 +112,14 @@ const Scene2: React.FC = () => (
       {services.map((s, i) => (
         <Rise
           key={s}
-          delay={18 + i * 16}
+          delay={16 + i * 12}
           style={{
             color: colors.white,
-            fontSize: 104,
+            fontSize: 80,
             fontWeight: 900,
             lineHeight: 1.05,
-            borderLeft: `16px solid ${colors.orange}`,
-            paddingLeft: 40,
+            borderLeft: `14px solid ${colors.orange}`,
+            paddingLeft: 36,
           }}
         >
           {s}
