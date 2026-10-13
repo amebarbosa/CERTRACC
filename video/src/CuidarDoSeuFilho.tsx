@@ -154,12 +154,12 @@ const Scene4: React.FC = () => {
           style={{
             backgroundColor: colors.white,
             borderRadius: 48,
-            padding: 56,
+            padding: '56px 48px',
             transform: `scale(${pop})`,
             boxShadow: '0 30px 80px rgba(0,0,0,0.35)',
           }}
         >
-          <Img src={staticFile('logo.png')} style={{width: 640, maxHeight: 640, objectFit: 'contain', display: 'block'}} />
+          <Img src={staticFile('logo.png')} style={{width: 880, display: 'block'}} />
         </div>
         <Rise delay={24} style={{color: colors.orange, fontSize: 112, fontWeight: 900}}>
           @certracc
