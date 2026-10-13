@@ -1,0 +1,19 @@
+{
+  "name": "certracc-video",
+  "private": true,
+  "scripts": {
+    "prerender": "cp ../logo.png public/logo.png",
+    "studio": "npm run prerender && remotion studio",
+    "render": "npm run prerender && remotion render CuidarDoSeuFilho ../videos/certracc-cuidar-do-seu-filho.mp4 --codec=h264 --crf=18"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
