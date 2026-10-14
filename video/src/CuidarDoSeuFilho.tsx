@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Audio,
   Easing,
   Img,
   interpolate,
@@ -184,6 +185,9 @@ const Scene4: React.FC = () => {
 
 export const CuidarDoSeuFilho: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: colors.navy}}>
+    {/* Camada 1: trilha; camada 2: efeitos. Gerados por audio/gerar_audio.py */}
+    <Audio src={staticFile('audio/trilha.wav')} volume={0.8} />
+    <Audio src={staticFile('audio/efeitos.wav')} volume={0.75} />
     {[Scene1, Scene2, Scene3, Scene4].map((Scene, i) => (
       <Sequence key={i} from={i * SCENE} durationInFrames={SCENE}>
         <Scene />

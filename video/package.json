@@ -4,7 +4,8 @@
   "scripts": {
     "prerender": "cp ../logo.png public/logo.png",
     "studio": "npm run prerender && remotion studio",
-    "render": "npm run prerender && remotion render CuidarDoSeuFilho ../videos/certracc-cuidar-do-seu-filho.mp4 --codec=h264 --crf=18"
+    "audio": "python3 audio/gerar_audio.py",
+    "render": "npm run prerender && remotion render CuidarDoSeuFilho ../videos/certracc-cuidar-do-seu-filho.mp4 --codec=h264 --crf=18 --audio-codec=aac --audio-bitrate=192k"
   },
   "dependencies": {
     "@remotion/cli": "4.0.535",
